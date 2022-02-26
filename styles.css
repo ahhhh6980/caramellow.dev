@@ -1,0 +1,169 @@
+:root {
+	--bg-base: #191d25;
+	--bg-surface: #1c2538;
+	--fg-strong: #ffffff;
+	--fg-text: #c9ced9;
+	--fg-muted: #737f9a;
+	--fg-border: #273044;
+	--fg-accent: #de4167;
+	--border-radius: 10px;
+}
+
+html { box-sizing: border-box; }
+* { box-sizing: inherit; }
+
+body {
+	background: var(--bg-base);
+	color: var(--fg-primary);
+	font-family: 'Inter';
+	line-height: 1.6;
+	margin: 40px auto;
+	max-width: 920px;
+	padding: 10px;
+	color: var(--fg-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--fg-strong);
+	font-weight: 600;
+	line-height: 1.3;
+	margin: 0;
+}
+
+h1 {
+	font-size: 3.25em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+h3 {
+	font-size: 1.25em;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+a {
+	color: var(--fg-accent);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	margin: 0;
+}
+
+.about {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	margin-top: 30px;
+	gap: 20px;
+}
+
+.about .bio {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.about .bio p {
+	margin: 0;
+}
+
+.about aside {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	background: var(--bg-surface);
+	border-radius: var(--border-radius);
+	width: 280px;
+	padding: 14px 16px;
+	line-height: 1.5;
+}
+
+.about aside h2 {
+	font-size: 1em;
+	margin: 0;
+}
+
+.about aside ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.showcase {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.showcase a {
+	padding: 20px;
+	display: block;
+	border-radius: var(--border-radius);
+	border: 1px solid var(--fg-border);
+	color: inherit;
+	text-decoration: none;
+	height: 200px;
+}
+
+.showcase article {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	gap: 20px;
+}
+
+.showcase .meta {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	overflow: hidden;
+}
+
+.showcase .meta h3 {
+	font-size: 1em;
+	margin: 0;
+}
+
+.showcase .meta p {
+	font-size: 0.875em;
+	margin: 0;
+}
+
+.showcase .meta .url {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: var(--fg-muted);
+}
+
+.showcase .image {
+	flex: 1;
+}
+
+.showcase .image img,
+.showcase .image video {
+	display: block;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center center;
+	border-radius: calc(var(--border-radius) - 5px);
+}
+
+::selection {
+	background: var(--fg-accent);
+	color: var(--fg-strong);
+}
