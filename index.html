@@ -138,5 +138,19 @@
 			<li>Mobile port of HOGGLES</li>
 			<li>Rust Minecraft AI</li>
 		</ul>
+
+		<script>
+			const videos = [ ...document.getElementsByTagName('video') ]
+
+			for (const video of videos) {
+				video.addEventListener('loadeddata', () => {
+					for (const video of videos) {
+						try {
+							video.currentTime = 0
+						} catch {}
+					}
+				})
+			}
+		</script>
 	</body>
 </html>
