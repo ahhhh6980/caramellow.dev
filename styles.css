@@ -13,7 +13,7 @@ html { box-sizing: border-box; }
 * { box-sizing: inherit; }
 
 body {
-	background: var(--bg-base) url(https://cdn.discordapp.com/attachments/776257341803986964/947042220400312390/slightly_visible_lober.png);
+	background: var(--bg-base) url(https://cdn.discordapp.com/attachments/776257341803986964/947044099196878858/slightly_visible_lober.png);
 	color: var(--fg-primary);
 	font-family: 'Inter', sans-serif;
 	line-height: 1.6;
