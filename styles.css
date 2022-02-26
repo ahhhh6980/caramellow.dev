@@ -60,11 +60,18 @@ ul {
 	margin: 0;
 }
 
+iframe {
+	margin-top: 20px;
+	border: 1px solid var(--fg-border);
+	border-radius: var(--border-radius);
+	overflow: hidden;
+}
+
 .about {
+	margin-top: 30px;
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	margin-top: 30px;
 	gap: 20px;
 }
 
